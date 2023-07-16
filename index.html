@@ -45,20 +45,34 @@
             <h2>Join the waitlist for the<br /><span> Design System!</span></h2>
           </div>
 
-          <div class="formBox">
+          <form id="form" class="formBox">
             <div class="formInput">
-              <input type="text" placeholder="Full name..." />
+              <input
+                required
+                type="text"
+                placeholder="Full name..."
+                id="name"
+              />
               <img src="./assets/user.svg" alt="user" srcset="" />
             </div>
             <div class="formInput">
-              <input type="text" placeholder="Email address..." />
+              <input
+                required
+                type="email"
+                placeholder="Email address..."
+                id="email"
+              />
               <img src="./assets/mail.svg" alt="user" srcset="" />
             </div>
-            <div class="formBtn">
+            <!-- <div class="formBtn">
               <p>Join the waitlist</p>
               <img src="./assets/arrow.svg" alt="arrow" />
-            </div>
-          </div>
+            </div> -->
+            <button id="formBtn" class="formBtn" type="submit">
+              Join the waitlist
+              <img src="./assets/arrow.svg" alt="arrow" />
+            </button>
+          </form>
           <div class="contentBtm">
             <p>
               AlignUI Design System will be released within this year. Designed
@@ -93,7 +107,7 @@
       </div>
     </div>
 
-    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.1/gsap.min.js"></script>
-    <script src="./main.js"></script> -->
+    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.1/gsap.min.js"></script> --->
+    <script src="./main.js"></script>
   </body>
 </html>
