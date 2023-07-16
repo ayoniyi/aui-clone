@@ -1,0 +1,211 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&display=swap");
+
+html,
+body {
+  padding: 0;
+  margin: 0;
+  font-family: "Inter", Helvetica, system-ui, -apple-system, BlinkMacSystemFont,
+    "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue",
+    sans-serif;
+  font-display: swap;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  overflow-y: scroll;
+  height: 100%;
+  scroll-behavior: smooth;
+  -webkit-overflow-scrolling: touch;
+}
+
+body {
+  width: 100%;
+  background: #0d0d12;
+  background: black;
+  color: #fff;
+  position: relative;
+}
+
+li {
+  list-style: none;
+}
+
+input,
+select,
+textarea {
+  font-size: 100%;
+}
+.content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  position: relative;
+}
+.mainContent {
+  margin-top: 5em;
+  padding: 4em 0;
+  //border: 1px solid #ffffff2a;
+  width: 65%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  //   justify-content: center;
+  position: relative;
+}
+.shape1,
+.shape2 {
+  position: absolute;
+}
+.shape1 {
+  left: -10em;
+}
+.shape2 {
+  right: -10em;
+  bottom: 2em;
+}
+.top {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  p {
+    color: rgb(86, 86, 97);
+    font-size: 0.8em;
+    margin-top: 2em;
+  }
+  h2 {
+    // background: linear-gradient(
+    //   0deg,
+    //   rgb(236, 236, 238) 0%,
+    //   rgb(75, 75, 88) 100%
+    // );
+    //color: inear-gradient(0deg, rgb(236, 236, 238) 0%, rgb(75, 75, 88) 100%);
+    width: 100%;
+    text-align: center;
+    font-family: "Inter";
+    margin: 0.2em auto auto auto;
+    font-size: 3.3em;
+    font-weight: 600;
+    letter-spacing: -1px;
+    // background: linear-gradient(
+    //   180deg,
+    //   #fff 0%,
+    //   rgba(255, 255, 255, 0.602) 12.13%
+    // );
+    // background-clip: text;
+    // -webkit-background-clip: text;
+    // -webkit-text-fill-color: transparent;
+    // background: pink;
+
+    // background: linear-gradient(
+    //   181deg,
+    //   #fff 0%,
+    //   rgba(255, 255, 255, 0.15) 14.49%
+    // );
+    // background-clip: text;
+    // -webkit-background-clip: text;
+    color: rgba(241, 241, 243, 0.846);
+  }
+  span {
+    -webkit-text-fill-color: transparent;
+    background: 
+    //linear-gradient(to right, #f32170, #ff6b08, #cf23cf, #eedd44);
+      linear-gradient(270deg, rgb(158, 112, 255) 0%, rgb(255, 112, 172) 100%);
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+  }
+}
+
+.formBox {
+  margin: 3em 0 5em 0;
+}
+::-webkit-input-placeholder {
+  /* Edge */
+  color: rgb(38, 38, 44);
+}
+
+:-ms-input-placeholder {
+  /* Internet Explorer 10-11 */
+  color: rgb(30, 30, 185);
+}
+
+::placeholder {
+  color: rgb(59, 59, 62);
+}
+.formInput {
+  margin-bottom: 1em;
+  position: relative;
+  input {
+    background: transparent;
+    width: 30vw;
+    max-width: 325px;
+    outline: none;
+    font-size: 0.85em;
+    border: 1.2px solid rgb(38, 38, 44);
+    border-radius: 8px;
+    padding: 1.1em 1em 1.1em 2.8em;
+    height: 48px;
+    color: #fff;
+    transition: 0.2s ease-in;
+    &:hover {
+      background: rgb(20, 20, 26);
+    }
+    &:focus {
+      border: 1.2px solid rgb(93, 93, 95);
+    }
+  }
+  img {
+    position: absolute;
+    left: 0.7em;
+    top: 12px;
+  }
+}
+.button_disabled {
+  background: rgb(20, 20, 26);
+  color: rgb(75, 75, 88);
+  cursor: not-allowed;
+}
+.formBtn {
+  margin-top: 2em;
+  background: rgb(20, 20, 26);
+  color: rgb(75, 75, 88);
+  padding: 0 1em;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  position: relative;
+  border-radius: 8px;
+  height: 48px;
+  font-size: 1.1em;
+  img {
+    position: absolute;
+    right: 1em;
+  }
+  //
+}
+
+.contentBtm {
+  position: absolute;
+  width: 80%;
+  left: 10%;
+  right: 10%;
+  bottom: 0;
+}
+p {
+  margin: auto;
+  width: 60%;
+  text-align: center;
+  font-size: 0.8em;
+  color: rgb(59, 59, 62);
+}
