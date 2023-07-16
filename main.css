@@ -206,6 +206,7 @@ textarea {
 @media (max-width: 500px) {
   .mainContent {
     width: 80%;
+    padding-bottom: 3em;
   }
   .shape1,
   .shape2 {
@@ -226,6 +227,8 @@ textarea {
   }
   .contentBtm {
     width: 90%;
+    left: 5%;
+    right: 5%;
   }
   .contentBtm p {
     width: 96%;
