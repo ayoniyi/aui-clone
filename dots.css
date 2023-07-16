@@ -17,12 +17,12 @@
 
 .dots2 {
   right: 40%;
-  bottom: 10%;
+  top: 20%;
   animation: dotB 42s infinite linear reverse;
 }
 
 .dots3 {
-  top: 6em;
+  top: 26em;
   right: 2em;
   animation: dotC 42s infinite linear;
 }
@@ -51,7 +51,7 @@
 
 .dots8 {
   right: 3em;
-  bottom: 1em;
+  top: 30%;
   animation: dotH 42s infinite linear;
 }
 
