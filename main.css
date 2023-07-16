@@ -69,6 +69,8 @@ textarea {
 .shape1,
 .shape2 {
   position: absolute;
+  max-width: 379px;
+  max-height: 350px;
 }
 
 .shape1 {
@@ -204,6 +206,10 @@ textarea {
 @media (max-width: 500px) {
   .mainContent {
     width: 80%;
+  }
+  .shape1,
+  .shape2 {
+    max-width: 230px;
   }
   .top p {
     font-size: 0.75em;

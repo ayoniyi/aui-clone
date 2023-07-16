@@ -74,6 +74,8 @@ textarea {
 .shape1,
 .shape2 {
   position: absolute;
+  max-width: 379px;
+  max-height: 350px;
   //width: 100%;
   //display: none;
 }
@@ -224,6 +226,45 @@ textarea {
   }
 }
 
+// @media (max-width: 820px) {
+//   .mainContent {
+//     width: 80%;
+//   }
+//   .formInput {
+//     input {
+//       width: 60vw;
+//       max-width: 700px;
+//     }
+//   }
+// }
+// @media (max-width: 500px) {
+//   .mainContent {
+//     width: 80%;
+//   }
+//   .top {
+//     p {
+//       font-size: 0.75em;
+//     }
+//     h2 {
+//       font-size: 2em;
+//     }
+//     br {
+//       display: none;
+//     }
+//   }
+//   .formInput {
+//     input {
+//       width: 70vw;
+//       max-width: 800px;
+//     }
+//   }
+//   .contentBtm {
+//     width: 90%;
+//     p {
+//       width: 96%;
+//     }
+//   }
+// }
 @media (max-width: 820px) {
   .mainContent {
     width: 80%;
@@ -238,6 +279,11 @@ textarea {
 @media (max-width: 500px) {
   .mainContent {
     width: 80%;
+  }
+  .shape1,
+  .shape2 {
+    //background: lavender;
+    max-width: 230px;
   }
   .top {
     p {

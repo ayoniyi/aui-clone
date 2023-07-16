@@ -124,19 +124,19 @@
   animation: shoot2 2.2s 32s linear 1;
 }
 .lightRayTwo span:nth-child(6) {
-  animation: shoot 1.5s 36s linear 1;
+  animation: shoot2 1.5s 36s linear 1;
 }
 .lightRayTwo span:nth-child(7) {
-  animation: shoot 1.5s 42s linear 1;
+  animation: shoot2 1.5s 42s linear 1;
 }
 .lightRayTwo span:nth-child(8) {
-  animation: shoot 48s 48s linear 1;
+  animation: shoot2 48s 48s linear 1;
 }
 .lightRayTwo span:nth-child(9) {
-  animation: shoot 1.5s 54s linear 1;
+  animation: shoot2 1.5s 54s linear 1;
 }
 .lightRayTwo span:nth-child(10) {
-  animation: shoot 1.5s 60s linear 1;
+  animation: shoot2 1.5s 60s linear 1;
 }
 
 @keyframes shoot2 {
@@ -156,8 +156,18 @@
 @media (max-width: 500px) {
   .rayCover {
     left: -2em;
+    width: 300px;
+    height: 100px;
+    left: -7em;
+    top: 4.6em;
   }
   .rayCover2 {
     right: -1em;
   }
+}
+.lightRayOne span {
+  top: 4.6em;
+}
+.lightRayOne::before {
+  width: 230px;
 }/*# sourceMappingURL=lightray.css.map */
