@@ -25,6 +25,7 @@ html {
 
 body {
   width: 100%;
+  overflow-x: hidden;
   background: #0d0d12;
   background: black;
   color: #fff;
@@ -39,6 +40,7 @@ input,
 select,
 textarea {
   font-size: 100%;
+  font-size: 16px;
 }
 
 .container {
@@ -98,6 +100,9 @@ textarea {
   font-weight: 600;
   letter-spacing: -1px;
   color: rgba(241, 241, 243, 0.846);
+}
+.top br {
+  display: block;
 }
 .top span {
   -webkit-text-fill-color: transparent;
@@ -205,6 +210,9 @@ textarea {
   }
   .top h2 {
     font-size: 2em;
+  }
+  .top br {
+    display: none;
   }
   .formInput input {
     width: 70vw;
