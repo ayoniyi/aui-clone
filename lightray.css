@@ -10,15 +10,16 @@
 .rayCover2 {
   overflow: hidden;
   position: absolute;
-  width: 100px;
-  height: 300px;
-  bottom: 7em;
+  width: 50px;
+  height: 600px;
+  bottom: 5em;
   right: -4em;
 }
 
 .lightRayOne {
   position: absolute;
   left: -7em;
+  z-index: 1;
 }
 .lightRayOne span {
   position: absolute;
@@ -54,6 +55,21 @@
 .lightRayOne span:nth-child(5) {
   animation: shoot 1.5s 25s linear 1;
 }
+.lightRayOne span:nth-child(6) {
+  animation: shoot 1.5s 30s linear 1;
+}
+.lightRayOne span:nth-child(7) {
+  animation: shoot 1.5s 35s linear 1;
+}
+.lightRayOne span:nth-child(8) {
+  animation: shoot 1.5s 40s linear 1;
+}
+.lightRayOne span:nth-child(9) {
+  animation: shoot 1.5s 45s linear 1;
+}
+.lightRayOne span:nth-child(10) {
+  animation: shoot 1.5s 50s linear 1;
+}
 
 @keyframes shoot {
   0% {
@@ -71,15 +87,14 @@
 }
 .lightRayTwo {
   position: absolute;
-  bottom: 7em;
-  right: -4em;
-  background: rgb(36, 35, 35);
+  z-index: 1;
+  bottom: 5em;
+  right: 4em;
 }
 .lightRayTwo span {
   position: absolute;
-  bottom: 7em;
+  bottom: 5em;
   right: -4em;
-  z-index: 1;
   width: 4px;
   background: linear-gradient(270deg, rgb(158, 112, 255) 0%, rgb(255, 112, 172) 100%);
   box-shadow: 0 0 0 0 4px rgba(255, 255, 255, 0.1), 0 0 0 8px rgba(255, 255, 255, 0.1), 0 0 20px rgb(255, 255, 255);
@@ -88,26 +103,40 @@
 .lightRayTwo span::before {
   content: "";
   position: absolute;
-  top: 50%;
-  transform: translateY(-50%);
-  width: 300px;
+  transform: translateY(50%);
+  width: 900px;
   height: 0.8px;
   background: linear-gradient(270deg, rgb(158, 112, 255) 0%, rgb(255, 112, 172) 100%);
 }
 .lightRayTwo span:nth-child(1) {
-  animation: shoot2 1.5s 6s linear 1;
+  animation: shoot2 2.2s 6s linear 1;
 }
 .lightRayTwo span:nth-child(2) {
-  animation: shoot2 1.5s 12s linear 1;
+  animation: shoot2 2.2s 12s linear 1;
 }
 .lightRayTwo span:nth-child(3) {
-  animation: shoot2 1.5s 18s linear 1;
+  animation: shoot2 2.2s 18s linear 1;
 }
 .lightRayTwo span:nth-child(4) {
-  animation: shoot2 1.5s 24s linear 1;
+  animation: shoot2 2.2s 24s linear 1;
 }
 .lightRayTwo span:nth-child(5) {
-  animation: shoot2 1.5s 32s linear 1;
+  animation: shoot2 2.2s 32s linear 1;
+}
+.lightRayTwo span:nth-child(6) {
+  animation: shoot 1.5s 36s linear 1;
+}
+.lightRayTwo span:nth-child(7) {
+  animation: shoot 1.5s 42s linear 1;
+}
+.lightRayTwo span:nth-child(8) {
+  animation: shoot 48s 48s linear 1;
+}
+.lightRayTwo span:nth-child(9) {
+  animation: shoot 1.5s 54s linear 1;
+}
+.lightRayTwo span:nth-child(10) {
+  animation: shoot 1.5s 60s linear 1;
 }
 
 @keyframes shoot2 {
@@ -116,10 +145,19 @@
     opacity: 1;
   }
   80% {
-    opacity: 1;
+    transform: rotate(90deg) translateX(300px);
+    opacity: 0;
   }
   100% {
-    transform: rotate(90deg) translateX(200px);
-    opacity: 1;
+    transform: rotate(90deg) translateX(300px);
+    opacity: 0;
+  }
+}
+@media (max-width: 500px) {
+  .rayCover {
+    left: -2em;
+  }
+  .rayCover2 {
+    right: -1em;
   }
 }/*# sourceMappingURL=lightray.css.map */

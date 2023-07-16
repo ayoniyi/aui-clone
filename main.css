@@ -17,7 +17,7 @@ a {
 }
 
 html {
-  overflow-y: scroll;
+  overflow-x: hidden;
   height: 100%;
   scroll-behavior: smooth;
   -webkit-overflow-scrolling: touch;
@@ -41,6 +41,10 @@ textarea {
   font-size: 100%;
 }
 
+.container {
+  position: relative;
+}
+
 .content {
   display: flex;
   flex-direction: column;
@@ -52,7 +56,7 @@ textarea {
 
 .mainContent {
   margin-top: 5em;
-  padding: 4em 0;
+  padding: 4em 0 7em 0;
   width: 65%;
   display: flex;
   flex-direction: column;
@@ -63,6 +67,8 @@ textarea {
 .shape1,
 .shape2 {
   position: absolute;
+  width: 100%;
+  display: none;
 }
 
 .shape1 {
@@ -71,7 +77,7 @@ textarea {
 
 .shape2 {
   right: -10em;
-  bottom: 2em;
+  bottom: 4em;
 }
 
 .top {
@@ -173,13 +179,43 @@ textarea {
   width: 80%;
   left: 10%;
   right: 10%;
-  bottom: 0;
+  bottom: 2em;
 }
-
-p {
+.contentBtm p {
   margin: auto;
   width: 60%;
   text-align: center;
   font-size: 0.8em;
   color: rgb(59, 59, 62);
+}
+
+@media (max-width: 820px) {
+  .mainContent {
+    width: 80%;
+  }
+  .formInput input {
+    width: 60vw;
+    max-width: 700px;
+  }
+}
+@media (max-width: 500px) {
+  .mainContent {
+    width: 80%;
+  }
+  .top p {
+    font-size: 0.75em;
+  }
+  .top h2 {
+    font-size: 2em;
+  }
+  .formInput input {
+    width: 70vw;
+    max-width: 800px;
+  }
+  .contentBtm {
+    width: 90%;
+  }
+  .contentBtm p {
+    width: 96%;
+  }
 }/*# sourceMappingURL=main.css.map */
