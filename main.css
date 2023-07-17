@@ -219,6 +219,10 @@ textarea {
     width: 60vw;
     max-width: 700px;
   }
+  .formBox button {
+    width: 60vw;
+    max-width: 700px;
+  }
 }
 @media (max-width: 500px) {
   .mainContent {
@@ -239,6 +243,10 @@ textarea {
     display: none;
   }
   .formInput input {
+    width: 70vw;
+    max-width: 800px;
+  }
+  .formBox button {
     width: 70vw;
     max-width: 800px;
   }
