@@ -181,6 +181,7 @@ textarea {
   border-radius: 8px;
   height: 48px;
   font-size: 0.85em;
+  font-family: "Inter";
   cursor: pointer;
 }
 .formBtn img,
@@ -190,12 +191,10 @@ textarea {
 }
 
 .formBox button {
-  font-family: "Inter";
   outline: none;
   border: 0;
   width: 30vw;
   max-width: 325px;
-  font-size: 16px;
 }
 
 .contentBtm {
