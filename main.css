@@ -245,6 +245,10 @@ textarea {
   }
 }
 @media (max-width: 500px) {
+  html,
+  body {
+    max-height: 100vh;
+  }
   .mainContent {
     width: 80%;
     padding-bottom: 3em;
