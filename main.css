@@ -58,7 +58,7 @@ textarea {
 
 .mainContent {
   margin-top: 5em;
-  padding: 4em 0 7em 0;
+  padding: 4em 0 2em 0;
   width: 65%;
   display: flex;
   flex-direction: column;
@@ -114,7 +114,7 @@ textarea {
 }
 
 .formBox {
-  margin: 3em 0 5em 0;
+  margin: 3em 0 2em 0;
 }
 
 ::-moz-placeholder {
@@ -198,11 +198,8 @@ textarea {
 }
 
 .contentBtm {
-  position: absolute;
   width: 80%;
-  left: 10%;
-  right: 10%;
-  bottom: 2em;
+  margin: 1em 0 5em 0;
 }
 .contentBtm p {
   margin: auto;
@@ -210,6 +207,28 @@ textarea {
   text-align: center;
   font-size: 0.8em;
   color: rgb(59, 59, 62);
+}
+
+.navBtm {
+  position: absolute;
+  width: 90%;
+  left: 5%;
+  right: 5%;
+  bottom: 10px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.navBtm p {
+  margin: auto;
+  text-align: center;
+  font-size: 0.8em;
+  color: rgb(59, 59, 62);
+  transition: 0.2s ease-in;
+}
+.navBtm p:hover {
+  color: #fff;
+  transform: scale(1.009);
 }
 
 @media (max-width: 820px) {
@@ -259,5 +278,10 @@ textarea {
   }
   .contentBtm p {
     width: 96%;
+  }
+  .navBtm {
+    width: 95%;
+    left: 2.5%;
+    right: 2.5%;
   }
 }/*# sourceMappingURL=main.css.map */

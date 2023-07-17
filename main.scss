@@ -62,7 +62,7 @@ textarea {
 }
 .mainContent {
   margin-top: 5em;
-  padding: 4em 0 7em 0;
+  padding: 4em 0 2em 0;
   //border: 1px solid #ffffff2a;
   width: 65%;
   display: flex;
@@ -143,7 +143,7 @@ textarea {
 }
 
 .formBox {
-  margin: 3em 0 5em 0;
+  margin: 3em 0 2em 0;
 }
 ::-webkit-input-placeholder {
   /* Edge */
@@ -230,17 +230,40 @@ textarea {
 }
 
 .contentBtm {
-  position: absolute;
+  //position: absolute;
   width: 80%;
-  left: 10%;
-  right: 10%;
-  bottom: 2em;
+  margin: 1em 0 5em 0;
+  // left: 10%;
+  // right: 10%;
+  //bottom: 2em;
   p {
     margin: auto;
     width: 60%;
     text-align: center;
     font-size: 0.8em;
     color: rgb(59, 59, 62);
+  }
+}
+.navBtm {
+  //background: pink;
+  position: absolute;
+  width: 90%;
+  left: 5%;
+  right: 5%;
+  bottom: 10px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  p {
+    margin: auto;
+    text-align: center;
+    font-size: 0.8em;
+    color: rgb(59, 59, 62);
+    transition: 0.2s ease-in;
+    &:hover {
+      color: #fff;
+      transform: scale(1.009);
+    }
   }
 }
 
@@ -338,5 +361,10 @@ textarea {
     p {
       width: 96%;
     }
+  }
+  .navBtm {
+    width: 95%;
+    left: 2.5%;
+    right: 2.5%;
   }
 }
